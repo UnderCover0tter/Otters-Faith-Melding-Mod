@@ -1,14 +1,18 @@
 demo_decision = {
     picture = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
 
-    
+    major = yes
+
+    is_shown = {
+        has_trait = strong
+    }
     is_valid_showing_failures_only = {
         is_available_adult = yes
     }
     effect = {
         custom_tooltip = demo_decision_effect_tooltip
-        trigger_event = demo_event.1
+        remove_trait = strong
     }
 
-    ai_check_frequincy = 0
+    ai_check_interval = 0
 }
