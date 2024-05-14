@@ -1,0 +1,24 @@
+namespace = demo_event
+
+demo_event.1 = {
+    type = character_event
+    title = demo_event.1.t
+    desc = demo_event.1.desc
+
+    theme = realm
+
+    left_portrait = {
+        character = scope
+        animation = personality_honorable
+    }
+
+    immediate = {
+        play_music_cue = "mx_cue_succession"
+    }
+
+    is_shown {} 
+    option = { # Let the strength flow through
+        name = demo_event.1.option.1
+        add_trait = strong
+    }
+}
